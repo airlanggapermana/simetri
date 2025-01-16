@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman Milik Airlangga</title>
+</head>
+<body style="background-color:#ADD8E6; font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+<!-- ------ Header Selalu Muncul ------ -->
+<header style="background-color:#FFFFFF; padding: 10px; text-align: center;">
+    <nav>
+        <a href="index.html" style="margin-right: 10px; text-decoration: none; color: black;">Halaman Utama</a>
+        <a href="biodata.html" style="margin-right: 10px; text-decoration: none; color: black;">Biodata</a>
+        <a href="tagform.html" style="text-decoration: none; color: black;">Tag Form</a>
+    </nav>
+    <hr style="border: 1px solid #000;">
+</header>
+<!-- ------ Akhir Header ------ -->
+
+<!-- ------ Isi Web ------ -->
+<main style="padding: 20px;">
+    <h1 style="text-align: center;">DATA PENGUNJUNG</h1>
+    <form method="post" action="hasilform.php" style="max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <label for="nama" style="display: block; margin-bottom: 5px;">Nama:</label>
+        <input id="nama" name="nama" type="text" size="40" placeholder="Masukkan nama Anda" style="width: 100%; margin-bottom: 10px;" required>
+
+        <label style="display: block; margin-bottom: 5px;">Jenis Kelamin:</label>
+        <input id="jenkel-lk" name="jenkel" type="radio" value="Laki-laki" checked>
+        <label for="jenkel-lk">Laki-Laki</label>
+        <input id="jenkel-pr" name="jenkel" type="radio" value="Perempuan">
+        <label for="jenkel-pr">Perempuan</label>
+        <input id="jenkel-tt" name="jenkel" type="radio" value="Tidak Tahu">
+        <label for="jenkel-tt">Tidak Tahu</label>
+        <br><br>
+
+        <label for="asal" style="display: block; margin-bottom: 5px;">Dari mana Anda berasal:</label>
+        <select id="asal" name="asal" style="width: 100%; margin-bottom: 10px;" required>
+            <option value="Surabaya" selected>Surabaya</option>
+            <option value="Sidoarjo">Sidoarjo</option>
+            <option value="Gresik">Gresik</option>
+            <option value="Mojokerto">Mojokerto</option>
+            <option value="Madura">Madura</option>
+        </select>
+
+        <label style="display: block; margin-bottom: 5px;">Penilaian Anda Tentang Web ini:</label>
+        <input id="penilaian-baik" name="penilaian" type="radio" value="Baik" checked>
+        <label for="penilaian-baik">Baik</label>
+        <input id="penilaian-cukup" name="penilaian" type="radio" value="Cukup">
+        <label for="penilaian-cukup">Cukup</label>
+        <input id="penilaian-kurang" name="penilaian" type="radio" value="Kurang">
+        <label for="penilaian-kurang">Kurang</label>
+        <br><br>
+
+        <label style="display: block; margin-bottom: 5px;">Yang Menarik dari Website ini Menurut Anda:</label>
+        <input id="menarik-tampilan" name="menarik" type="checkbox" value="Tampilan Bagus" checked>
+        <label for="menarik-tampilan">Tampilan Bagus</label>
+        <input id="menarik-navigasi" name="menarik" type="checkbox" value="Navigasi Mudah">
+        <label for="menarik-navigasi">Navigasi Mudah</label>
+        <input id="menarik-ringan" name="menarik" type="checkbox" value="Ringan">
+        <label for="menarik-ringan">Ringan</label>
+        <br><br>
+
+        <label for="komentar" style="display: block; margin-bottom: 5px;">Komentar Anda Tentang Website Ini:</label>
+        <textarea id="komentar" name="komentar" rows="5" cols="60" style="width: 100%; margin-bottom: 10px;" placeholder="Tulis komentar Anda..." required></textarea>
+
+        <input type="submit" name="submit" value="KIRIM" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+        <input type="reset" name="reset" value="RESET" style="padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 4px; cursor: pointer;">
+    </form>
+</main>
+<!-- ------ Akhir Isi Web ------ -->
+
+</body>
+</html>
